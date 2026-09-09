@@ -1,4 +1,4 @@
-package exercicios;
+package ProjetoLivro;
 
 public class LivroDigital extends Livro {
 
@@ -30,5 +30,14 @@ public class LivroDigital extends Livro {
 
     public void setTamanho(double tamanho) {
         this.tamanho = tamanho;
+    }
+
+    public LivroDigital() { }
+
+    @Override
+    public void info() {
+        super.info();
+        System.out.println("download: " + download);
+        System.out.println("tamanho: " + tamanho);
     }
 }

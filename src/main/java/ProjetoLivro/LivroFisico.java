@@ -1,4 +1,4 @@
-package exercicios;
+package ProjetoLivro;
 
 public class LivroFisico extends Livro {
 
@@ -25,6 +25,17 @@ public class LivroFisico extends Livro {
         super(titulo, autor, genero, edicao);
         this.tiragem = tiragem;
         this.peso = peso;
+    }
+
+    public LivroFisico() {
+
+    }
+
+    @Override
+    public void info() {
+        super.info();
+        System.out.println("Tiragem: " + tiragem);
+        System.out.println("Peso: " + peso);
     }
 
 }
